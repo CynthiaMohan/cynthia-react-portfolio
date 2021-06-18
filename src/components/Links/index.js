@@ -22,8 +22,11 @@ export default function LabelBottomNavigation() {
 
     return (
         <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-            <BottomNavigationAction label="Github" value="github" icon={<GithubIcon />} />
-            <BottomNavigationAction label="Linkedin" value="linkedin" icon={<LocationOnIcon />} />
+            <a href="https://github.com/CynthiaMohan"  >
+                <BottomNavigationAction label="Github" value="github" icon={<GithubIcon />} />
+            </a>
+            <a href=""><BottomNavigationAction label="Linkedin" value="linkedin" icon={<LocationOnIcon />} /></a>
+            
             {/* <BottomNavigationAction label="Phone" value="phone" icon={<GithubIcon />} /> */}
         </BottomNavigation>
     );
