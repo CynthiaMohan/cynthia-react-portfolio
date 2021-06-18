@@ -27,6 +27,9 @@ const drawerWidth = 240;
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
+        '& > *': {
+            margin: theme.spacing(1),
+        },
     },
     appBar: {
         transition: theme.transitions.create(['margin', 'width'], {
@@ -97,11 +100,15 @@ export default function PersistentDrawerLeft(props) {
     return (
         <div className={classes.root}>
             <CssBaseline />
+
+
+
             <AppBar
                 position="fixed"
                 className={clsx(classes.appBar, {
                     [classes.appBarShift]: open,
                 })}
+
             >
                 <Toolbar>
                     <IconButton
@@ -114,14 +121,14 @@ export default function PersistentDrawerLeft(props) {
                         <MenuIcon />
                     </IconButton>
 
-                    <Typography variant="h6" noWrap>
+                    <Typography variant="h6" noWrap flexGrow={1}>
                         Cynthia Mohan
                     </Typography>
                     <Avatar alt="Cynthia Mohan" src="/images/profile pic.jpg" className={classes.large} />
-
-
                 </Toolbar>
+
             </AppBar>
+
             <Drawer
                 className={classes.drawer}
                 variant="persistent"
