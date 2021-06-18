@@ -1,14 +1,16 @@
 import React from 'react';
-import Link from './components/Links';
-import Nav from './components/Nav';
+import { Switch, Route } from 'react-router-dom';
+import Drawer from './components/Drawer';
+import AboutComponent from './components/About';
 
 function App() {
   return (
-    <div>
-      <Nav></Nav>
-      <h1>Hello</h1>
-      <Link></Link>
-    </div>
+    <Drawer>
+      <Switch>
+        <Route path='/about' component={AboutComponent} />
+
+      </Switch>
+    </Drawer>
   );
 };
 
