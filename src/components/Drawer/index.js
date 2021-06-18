@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -15,9 +16,9 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
+// import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
-
+import AboutIcon from '@material-ui/icons/Info';
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -77,11 +78,11 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function PersistentDrawerLeft() {
+export default function PersistentDrawerLeft(props) {
     const classes = useStyles();
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
-
+    let Icon;
     const handleDrawerOpen = () => {
         setOpen(true);
     };
@@ -131,8 +132,12 @@ export default function PersistentDrawerLeft() {
                 <Divider />
                 <List>
                     {['About', 'Work', 'Contact', 'Resume'].map((text, index) => (
-                        <ListItem button key={text}>
-                            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
+                        <ListItem
+                            component={Link}
+                            to={text}
+                            button key={text}
+                        >
+                            <ListItemIcon></ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
@@ -145,14 +150,7 @@ export default function PersistentDrawerLeft() {
                 })}
             >
                 <div className={classes.drawerHeader} />
-                <Typography paragraph>
-                    Hi I'm Cynthia Mohan.<br />
-                    I am a Full Stack Developer holding a Masters in Computer and Communication Engineering.<br />
-                    I recently earned a certificate in Full Stack Developmentfrom UC Berkeley where I was trained in HTML CSS and Javascript, jQuery moment.js and other libraries associated with javascript Nodejs Vuejs and more.<br />
-                    I have good communication skills and bring to the project the ability to work independantly and as within a team. I focus on writing clean and efficient code.<br />
-                    I love Photography, gardening, watching Netflix and spending time with my family.
-                </Typography>
-
+                {props.children}
             </main>
         </div>
     );
