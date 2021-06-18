@@ -20,7 +20,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import MailIcon from '@material-ui/icons/Mail';
 import AboutIcon from '@material-ui/icons/Info';
 import Avatar from '@material-ui/core/Avatar';
-
+import Box from '@material-ui/core/Box';
 
 const drawerWidth = 240;
 
@@ -30,6 +30,8 @@ const useStyles = makeStyles((theme) => ({
         '& > *': {
             margin: theme.spacing(1),
         },
+        flexGrow: 1,
+
     },
     appBar: {
         transition: theme.transitions.create(['margin', 'width'], {
@@ -100,9 +102,6 @@ export default function PersistentDrawerLeft(props) {
     return (
         <div className={classes.root}>
             <CssBaseline />
-
-
-
             <AppBar
                 position="fixed"
                 className={clsx(classes.appBar, {
@@ -120,13 +119,15 @@ export default function PersistentDrawerLeft(props) {
                     >
                         <MenuIcon />
                     </IconButton>
+                    <Box display='flex' flexGrow={1}>
+                        <Typography variant="h6" noWrap>
+                            Cynthia Mohan
+                        </Typography>
+                    </Box>
 
-                    <Typography variant="h6" noWrap flexGrow={1}>
-                        Cynthia Mohan
-                    </Typography>
                     <Avatar alt="Cynthia Mohan" src="/images/profile pic.jpg" className={classes.large} />
-                </Toolbar>
 
+                </Toolbar>
             </AppBar>
 
             <Drawer
@@ -166,6 +167,6 @@ export default function PersistentDrawerLeft(props) {
                 <div className={classes.drawerHeader} />
                 {props.children}
             </main>
-        </div>
+        </div >
     );
 }
