@@ -19,6 +19,9 @@ import ListItemText from '@material-ui/core/ListItemText';
 // import InboxIcon from '@material-ui/icons/MoveToInbox';
 import MailIcon from '@material-ui/icons/Mail';
 import AboutIcon from '@material-ui/icons/Info';
+import Avatar from '@material-ui/core/Avatar';
+
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -110,9 +113,13 @@ export default function PersistentDrawerLeft(props) {
                     >
                         <MenuIcon />
                     </IconButton>
+
                     <Typography variant="h6" noWrap>
                         Cynthia Mohan
                     </Typography>
+                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+
+
                 </Toolbar>
             </AppBar>
             <Drawer
