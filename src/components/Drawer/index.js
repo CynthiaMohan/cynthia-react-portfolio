@@ -21,6 +21,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import AboutIcon from '@material-ui/icons/Info';
 import Avatar from '@material-ui/core/Avatar';
 import Box from '@material-ui/core/Box';
+import Links from '@material-ui/core/Link';
 
 const drawerWidth = 240;
 
@@ -98,7 +99,7 @@ export default function PersistentDrawerLeft(props) {
     const handleDrawerClose = () => {
         setOpen(false);
     };
-
+    // const preventDefault = (event) => event.preventDefault();
     return (
         <div className={classes.root}>
             <CssBaseline />
@@ -124,8 +125,13 @@ export default function PersistentDrawerLeft(props) {
                             Cynthia Mohan
                         </Typography>
                     </Box>
+                    <Typography variant="h6" noWrap>
+                        <Links href="/" >
+                            <Avatar alt="Cynthia Mohan" src="/images/profile pic.jpg" className={classes.large} />
+                        </Links>
 
-                    <Avatar alt="Cynthia Mohan" src="/images/profile pic.jpg" className={classes.large} />
+                    </Typography>
+
 
                 </Toolbar>
             </AppBar>
