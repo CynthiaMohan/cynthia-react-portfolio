@@ -117,7 +117,7 @@ export default function PersistentDrawerLeft(props) {
                     <Typography variant="h6" noWrap>
                         Cynthia Mohan
                     </Typography>
-                    <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
+                    <Avatar alt="Cynthia Mohan" src="/images/profile pic.jpg" className={classes.large} />
 
 
                 </Toolbar>
