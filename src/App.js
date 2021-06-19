@@ -5,6 +5,7 @@ import AboutComponent from './components/About';
 import HomeComponent from './components/Home';
 import WorkComponent from './components/Work';
 import ContactComponent from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/contact' component={ContactComponent} />
         <Route path='/' component={HomeComponent} />
       </Switch>
+      <Footer />
     </Drawer>
   );
 };
