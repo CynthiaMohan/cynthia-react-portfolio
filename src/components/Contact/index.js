@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Grid, TextField, makeStyles, Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -20,13 +20,23 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
+
 export default function ContactForm() {
     const classes = useStyles();
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    function handleChange(e) {
+        setFormState({ ...formState, [e.target.id]: e.target.value })
+    }
+    // console.log(formState);
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
+    }
     return (
         <>
             <h1>Contact Page</h1>
             <Grid container>
-                <form className={classes.root} noValidate autoComplete="off">
+                <form className={classes.root} noValidate autoComplete="off" id="contact-form">
                     <Grid item xs={12} >
                         <TextField
                             required
@@ -35,6 +45,7 @@ export default function ContactForm() {
                             defaultValue=""
                             placeholder="Enter your name here."
                             variant="outlined"
+                            onChange={handleChange}
                         />
                     </Grid>
                     <Grid item xs={12} >
@@ -45,6 +56,7 @@ export default function ContactForm() {
                             defaultValue=""
                             placeholder="Enter your email here."
                             variant="outlined"
+                            onChange={handleChange}
                         />
                     </Grid>
                     <Grid item xs={12} >
@@ -57,9 +69,10 @@ export default function ContactForm() {
                             multiline
                             rows={4}
                             variant="outlined"
+                            onChange={handleChange}
                         />
                     </Grid>
-                    <Button className="classes.buttonField" variant="contained" color="primary">
+                    <Button className="classes.buttonField" variant="contained" color="primary" onClick={handleSubmit}>
                         Submit
                     </Button>
                 </form>
