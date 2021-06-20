@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         position: 'fixed',
         bottom: 0,
         backgroundColor: "#484B4C",
-        color: "#eceff1"
+        color: "#FFFFFF" 
     },
 });
 
@@ -30,7 +30,7 @@ export default function SimpleBottomNavigation() {
             showLabels
             className={classes.root}
         >
-            <BottomNavigationAction label="Github" onClick icon={<GitHubIcon style={{ color: "#ffffff" }} />} />
+            <BottomNavigationAction label="Github" icon={<GitHubIcon style={{ color: "#ffffff" }} />} />
             <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{ color: "#ffffff" }} />} />
             <BottomNavigationAction
                 label="Phone"

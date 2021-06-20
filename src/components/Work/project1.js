@@ -19,7 +19,7 @@ export default function ImgMediaCard() {
     const classes = useStyles();
 
     return (
-        <Card className={classes.root}>
+        <Card className={classes.root} variant="outlined">
             <CardActionArea>
                 <CardMedia
                     component="img"
