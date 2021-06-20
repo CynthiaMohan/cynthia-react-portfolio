@@ -21,6 +21,7 @@ const Work = () => {
             <Grid container spacing={4} className={classes.gridContainer}>
 
                 <Grid item xs={12} sm={6} md={4}><Project1 /></Grid>
+                <Grid item xs={12} sm={6} md={4}><Project1 /></Grid>
                 <Grid item xs={12} sm={6} md={4}><Project2 /></Grid>
                 <Grid item xs={12} sm={6} md={4}><Project2 /></Grid>
             </Grid>

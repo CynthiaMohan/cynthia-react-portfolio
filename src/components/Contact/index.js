@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControl, Input, InputLabel, FormHelperText, TextField, makeStyles } from '@material-ui/core';
+import { Grid, TextField, makeStyles, Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -15,46 +15,55 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(1),
         width: '25ch',
     },
+    buttonField: {
+        paddingmarginLeft: '40px',
+    },
 }));
 
 export default function ContactForm() {
     const classes = useStyles();
     return (
-        <div>
+        <>
             <h1>Contact Page</h1>
-            <form className={classes.root} noValidate autoComplete="off">
-                <div>
-                    <TextField
-                        required
-                        id="name"
-                        label="Name"
-                        defaultValue=""
-                        placeholder="Enter your name here."
-                        variant="outlined"
-                    />
-
-                    <TextField
-                        required
-                        id="email"
-                        label="Email"
-                        defaultValue=""
-                        placeholder="Enter your email here."
-                        variant="outlined"
-                    />
-
-                    <TextField
-                        required
-                        id="message"
-                        label="Message"
-                        defaultValue=""
-                        placeholder="Enter your message here."
-                        multiline
-                        rows={4}
-                        variant="outlined"
-                    />
-
-                </div>
-            </form>
-        </div>
+            <Grid container>
+                <form className={classes.root} noValidate autoComplete="off">
+                    <Grid item xs={12} >
+                        <TextField
+                            required
+                            id="name"
+                            label="Name"
+                            defaultValue=""
+                            placeholder="Enter your name here."
+                            variant="outlined"
+                        />
+                    </Grid>
+                    <Grid item xs={12} >
+                        <TextField
+                            required
+                            id="email"
+                            label="Email"
+                            defaultValue=""
+                            placeholder="Enter your email here."
+                            variant="outlined"
+                        />
+                    </Grid>
+                    <Grid item xs={12} >
+                        <TextField
+                            required
+                            id="message"
+                            label="Message"
+                            defaultValue=""
+                            placeholder="Enter your message here."
+                            multiline
+                            rows={4}
+                            variant="outlined"
+                        />
+                    </Grid>
+                    <Button className="classes.buttonField" variant="contained" color="primary">
+                        Submit
+                    </Button>
+                </form>
+            </Grid>
+        </>
     );
 }

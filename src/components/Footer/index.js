@@ -13,7 +13,9 @@ const useStyles = makeStyles({
         position: 'fixed',
         bottom: 0,
         backgroundColor: "#484B4C",
-        color: "#FFFFFF" 
+        color: "#FFFFFF",
+        left: 0,
+        justifyContent: "center"
     },
 });
 
