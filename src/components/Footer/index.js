@@ -11,6 +11,15 @@ const useStyles = makeStyles({
     root: {
         width: '100%',
         position: 'fixed',
+        bottom: 50,
+        backgroundColor: "#484B4C",
+        color: "#FFFFFF",
+        left: 0,
+        justifyContent: "center"
+    },
+    root2: {
+        width: '100%',
+        position: 'fixed',
         bottom: 0,
         backgroundColor: "#484B4C",
         color: "#FFFFFF",
@@ -24,24 +33,28 @@ export default function SimpleBottomNavigation() {
     const [value, setValue] = React.useState(0);
 
     return (
-        <BottomNavigation
-            value={value}
-            onChange={(event, newValue) => {
-                setValue(newValue);
-            }}
-            showLabels
-            className={classes.root}
-        >
-            <BottomNavigationAction
-                label="Github"
-                icon={<GitHubIcon style={{ color: "#ffffff" }} />}
-                href={"https://github.com/CynthiaMohan"} />
-            <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{ color: "#ffffff" }} />} href={"https://www.linkedin.com/in/cynthia-mohan/"} />
-            <BottomNavigationAction
-                label="Phone"
-                icon={<PhoneIphoneIcon style={{ color: "#ffffff" }}
-                />} href={"tel:+12678442523"}
-            />
-        </BottomNavigation>
+        <>
+            <BottomNavigation
+                value={value}
+                onChange={(event, newValue) => {
+                    setValue(newValue);
+                }}
+                showLabels
+                className={classes.root}
+            >
+                <BottomNavigationAction
+                    label="Github"
+                    icon={<GitHubIcon style={{ color: "#ffffff" }} />}
+                    href={"https://github.com/CynthiaMohan"} />
+                <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{ color: "#ffffff" }} />} href={"https://www.linkedin.com/in/cynthia-mohan/"} />
+                <BottomNavigationAction
+                    label="Phone"
+                    icon={<PhoneIphoneIcon style={{ color: "#ffffff" }}
+                    />} href={"tel:+12678442523"}
+                />
+            </BottomNavigation>
+            <BottomNavigation className={classes.root2}> <p>Made by Cynthia Mohan 2021</p></BottomNavigation>
+
+        </>
     );
 }
