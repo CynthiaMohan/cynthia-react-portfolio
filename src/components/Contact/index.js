@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Grid, TextField, makeStyles, Button } from '@material-ui/core';
+import { validateEmail } from '../../utils/helpers';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -24,13 +25,35 @@ const useStyles = makeStyles((theme) => ({
 export default function ContactForm() {
     const classes = useStyles();
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [errorMessage, setErrorMessage] = useState('');
+
     function handleChange(e) {
-        setFormState({ ...formState, [e.target.id]: e.target.value })
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            }
+        }
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.id]: e.target.value });
+            console.log('Handle Form', formState);
+        }
     }
     // console.log(formState);
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
+        if (!errorMessage) {
+            console.log('Submit Form', formState);
+        }
     }
     return (
         <>
