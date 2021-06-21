@@ -95,6 +95,11 @@ export default function ContactForm() {
                             onChange={handleChange}
                         />
                     </Grid>
+                    {errorMessage && (
+                        <div>
+                            <p className="error-text">{errorMessage}</p>
+                        </div>
+                    )}
                     <Button className="classes.buttonField" variant="contained" color="primary" onClick={handleSubmit}>
                         Submit
                     </Button>
