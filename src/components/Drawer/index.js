@@ -138,7 +138,7 @@ export default function PersistentDrawerLeft(props) {
                 </div>
                 <Divider />
                 <List>
-                    {['About', 'Work', 'Contact', 'Resume'].map((text, index) => (
+                    {['About', 'Portfolio', 'Contact', 'Resume'].map((text, index) => (
                         <ListItem
                             component={Link}
                             to={text}

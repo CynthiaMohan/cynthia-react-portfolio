@@ -12,7 +12,7 @@ function App() {
     <Drawer>
       <Switch>
         <Route path='/about' component={AboutComponent} />
-        <Route path='/work' component={WorkComponent} />
+        <Route path='/portfolio' component={WorkComponent} />
         <Route path='/contact' component={ContactComponent} />
         <Route path='/' component={HomeComponent} />
       </Switch>
