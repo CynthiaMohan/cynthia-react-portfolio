@@ -32,11 +32,15 @@ export default function SimpleBottomNavigation() {
             showLabels
             className={classes.root}
         >
-            <BottomNavigationAction label="Github" icon={<GitHubIcon style={{ color: "#ffffff" }} />} />
-            <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{ color: "#ffffff" }} />} />
+            <BottomNavigationAction
+                label="Github"
+                icon={<GitHubIcon style={{ color: "#ffffff" }} />}
+                href={"https://github.com/CynthiaMohan"} />
+            <BottomNavigationAction label="LinkedIn" icon={<LinkedInIcon style={{ color: "#ffffff" }} />} href={"https://www.linkedin.com/in/cynthia-mohan/"} />
             <BottomNavigationAction
                 label="Phone"
-                icon={<PhoneIphoneIcon style={{ color: "#ffffff" }} />}
+                icon={<PhoneIphoneIcon style={{ color: "#ffffff" }}
+                />} href={"tel:+12678442523"}
             />
         </BottomNavigation>
     );
