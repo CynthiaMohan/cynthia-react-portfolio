@@ -144,7 +144,6 @@ export default function PersistentDrawerLeft(props) {
                             to={text}
                             button key={text}
                         >
-                            <ListItemIcon></ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}

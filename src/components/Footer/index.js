@@ -39,7 +39,7 @@ export default function SimpleBottomNavigation() {
                 onChange={(event, newValue) => {
                     setValue(newValue);
                 }}
-                showLabels
+                showlabel
                 className={classes.root}
             >
                 <BottomNavigationAction

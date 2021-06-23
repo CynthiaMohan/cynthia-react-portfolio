@@ -12,11 +12,12 @@ function App() {
   return (
     <Drawer>
       <Switch>
+        <Route path='/' component={AboutComponent} />
         <Route path='/about' component={AboutComponent} />
         <Route path='/portfolio' component={WorkComponent} />
         <Route path='/contact' component={ContactComponent} />
         <Route path='/resume' component={ResumeComponent} />
-        <Route path='/' component={AboutComponent} />
+
       </Switch>
       <Footer />
     </Drawer>

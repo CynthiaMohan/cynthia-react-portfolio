@@ -97,6 +97,7 @@ export default function ContactForm() {
                     </Grid>
                     {errorMessage && (
                         <div>
+                            <h1>hi</h1>
                             <p className="error-text">{errorMessage}</p>
                         </div>
                     )}
