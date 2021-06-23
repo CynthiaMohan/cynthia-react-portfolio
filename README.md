@@ -36,7 +36,7 @@ This Application is covered under :
 * Material-UI
 
 ## Screenshots
-![Mockup](./public/images/ss.png)
+![Mockup](./src/assets/images/ss.png)
 
 ## Questions
 View my Github Profile at [CynthiaMohan](http://github.com/CynthiaMohan)
