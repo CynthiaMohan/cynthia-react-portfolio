@@ -7,6 +7,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import Links from '@material-ui/core/Link';
+import profileAvatar from '../../assets/images/profile pic.jpg';
+
 
 const drawerWidth = 240;
 
@@ -113,7 +115,7 @@ export default function PersistentDrawerLeft(props) {
                     </Box>
                     <Typography variant="h6" noWrap>
                         <Links href="/" >
-                            <Avatar alt="Cynthia Mohan" src="/images/avatar/1.jpg" />
+                            <Avatar alt="Cynthia Mohan" src={profileAvatar} />
                         </Links>
 
                     </Typography>
