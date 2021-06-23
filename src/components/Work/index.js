@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, makeStyles } from '@material-ui/core';
 import Project1 from './project1';
 import Project2 from './project2';
+import Project3 from './project3.js';
 
 const useStyles = makeStyles({
     gridContainer: {
@@ -21,9 +22,9 @@ const Work = () => {
             <Grid container spacing={4} className={classes.gridContainer}>
 
                 <Grid item xs={12} sm={6} md={4}><Project1 /></Grid>
-                <Grid item xs={12} sm={6} md={4}><Project1 /></Grid>
-                <Grid item xs={12} sm={6} md={4}><Project1 /></Grid>
                 <Grid item xs={12} sm={6} md={4}><Project2 /></Grid>
+                <Grid item xs={12} sm={6} md={4}><Project1 /></Grid>
+                <Grid item xs={12} sm={6} md={4}><Project3 /></Grid>
                 <Grid item xs={12} sm={6} md={4}><Project2 /></Grid>
                 <Grid item xs={12} sm={6} md={4}><Project2 /></Grid>
             </Grid>
