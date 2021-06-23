@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import project1Img from '../../assets/images/project2ss.png';
 
 const useStyles = makeStyles({
     root: {
@@ -25,7 +25,7 @@ export default function ImgMediaCard() {
                     component="img"
                     alt="Silicon-Clicker"
                     height="140"
-                    image="/images/project-ss.jpg"
+                    image={project1Img}
                     title="Silicon-Clicker"
                 />
                 <CardContent>

@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-
+import projectImg from '../../assets/images/project-ss.png';
 
 const useStyles = makeStyles({
     root: {
@@ -25,7 +25,7 @@ export default function ImgMediaCard() {
                     component="img"
                     alt="Interactive Front-end Project "
                     height="140"
-                    image="/images/project-ss.png"
+                    image={projectImg}
                     title="Weather-Clock-with-Currency-Converter"
                 />
                 <CardContent>
