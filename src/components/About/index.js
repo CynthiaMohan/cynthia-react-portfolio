@@ -1,6 +1,6 @@
 import Typography from '@material-ui/core/Typography';
 import { Grid } from '@material-ui/core';
-
+import profilepic from '../../assets/images/profile pic.jpg';
 const About = () => {
     return (
         <>
@@ -16,7 +16,7 @@ const About = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={4}>
-                    <img src="/images/profile pic.jpg" />
+                    <img src={profilepic} alt="Cynthia's Profile Picture" />
                 </Grid>
             </Grid>
         </>

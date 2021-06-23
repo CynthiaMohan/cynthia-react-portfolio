@@ -23,9 +23,9 @@ export default function ImgMediaCard() {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Contemplative Reptile"
+                    alt="Silicon-Clicker"
                     height="140"
-                    image="/images/project2ss.png"
+                    image="/images/project-ss.jpg"
                     title="Silicon-Clicker"
                 />
                 <CardContent>

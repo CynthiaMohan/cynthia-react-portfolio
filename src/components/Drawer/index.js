@@ -113,7 +113,7 @@ export default function PersistentDrawerLeft(props) {
                     </Box>
                     <Typography variant="h6" noWrap>
                         <Links href="/" >
-                            <Avatar alt="Cynthia Mohan" src="/images/profile pic.jpg" className={classes.large} />
+                            <Avatar alt="Cynthia Mohan" src="/images/avatar/1.jpg" />
                         </Links>
 
                     </Typography>
@@ -144,6 +144,7 @@ export default function PersistentDrawerLeft(props) {
                             to={text}
                             button key={text}
                         >
+                            <ListItemIcon></ListItemIcon>
                             <ListItemText primary={text} />
                         </ListItem>
                     ))}
