@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import projectImg from '../../assets/images/photo1.jpg';
+import projectImg from '../../assets/images/3.png';
 
 const useStyles = makeStyles({
     root: {
@@ -23,28 +23,28 @@ export default function ImgMediaCard() {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Interactive Front-end Project "
+                    alt="Password Generator App "
                     height="140"
                     image={projectImg}
-                    title="Budget-Tracker"
+                    title="Password-Generator-App"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Placeholder
+                        Password Generator App
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        To generate a secure Password everytime a user wishes to log into an Application or Webpage. when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button size="small" color="primary" >
-                    <a href="https://github.com/CynthiaMohan/Budget-tracker">
+                    <a href="https://github.com/CynthiaMohan/Secure-Password-Generator">
                         Github
                     </a>
                 </Button>
                 <Button size="small" color="primary">
-                    <a href="https://evening-taiga-49403.herokuapp.com/">
+                    <a href="https://cynthiamohan.github.io/Secure-Password-Generator/">
                         Deployed App
                     </a>
                 </Button>
