@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cynthia-react-portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/cynthia-react-portfolio/static/js/main.87986b68.chunk.js",
-    "main.js.map": "/cynthia-react-portfolio/static/js/main.87986b68.chunk.js.map",
+    "main.js": "/cynthia-react-portfolio/static/js/main.4d1a060c.chunk.js",
+    "main.js.map": "/cynthia-react-portfolio/static/js/main.4d1a060c.chunk.js.map",
     "runtime-main.js": "/cynthia-react-portfolio/static/js/runtime-main.a7af1011.js",
     "runtime-main.js.map": "/cynthia-react-portfolio/static/js/runtime-main.a7af1011.js.map",
     "static/js/2.4bd096c2.chunk.js": "/cynthia-react-portfolio/static/js/2.4bd096c2.chunk.js",
@@ -13,10 +13,10 @@
     "static/css/main.6dea0f05.chunk.css.map": "/cynthia-react-portfolio/static/css/main.6dea0f05.chunk.css.map",
     "static/js/2.4bd096c2.chunk.js.LICENSE.txt": "/cynthia-react-portfolio/static/js/2.4bd096c2.chunk.js.LICENSE.txt",
     "static/media/19.2fcf74df.png": "/cynthia-react-portfolio/static/media/19.2fcf74df.png",
+    "static/media/3.3d12bc2a.png": "/cynthia-react-portfolio/static/media/3.3d12bc2a.png",
     "static/media/4.7b2602e0.jpg": "/cynthia-react-portfolio/static/media/4.7b2602e0.jpg",
     "static/media/5.4939992e.jpg": "/cynthia-react-portfolio/static/media/5.4939992e.jpg",
     "static/media/Cynthia Mohan.4be5f54a.pdf": "/cynthia-react-portfolio/static/media/Cynthia Mohan.4be5f54a.pdf",
-    "static/media/photo1.b9dda750.jpg": "/cynthia-react-portfolio/static/media/photo1.b9dda750.jpg",
     "static/media/profile pic.273ad7bc.jpg": "/cynthia-react-portfolio/static/media/profile pic.273ad7bc.jpg",
     "static/media/project-ss.bd7d1c8d.png": "/cynthia-react-portfolio/static/media/project-ss.bd7d1c8d.png",
     "static/media/project2ss.7d59c15f.png": "/cynthia-react-portfolio/static/media/project2ss.7d59c15f.png"
@@ -25,6 +25,6 @@
     "static/js/runtime-main.a7af1011.js",
     "static/js/2.4bd096c2.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.87986b68.chunk.js"
+    "static/js/main.4d1a060c.chunk.js"
   ]
 }
