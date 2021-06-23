@@ -62,7 +62,7 @@ export default function ImageAvatars() {
 
 
             </div>
-            <h2><a href={Resume}>Download my Resume here</a></h2>
+            <h2><a href={Resume} target="/">Download my Resume here</a></h2>
         </>
     );
 }
