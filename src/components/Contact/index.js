@@ -27,8 +27,9 @@ export default function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const [errorMessage, setErrorMessage] = useState('');
 
+
     function handleChange(e) {
-        if (e.target.name === 'email') {
+        if (e.target.id === 'email') {
             const isValid = validateEmail(e.target.value);
             if (!isValid) {
                 setErrorMessage('Your email is invalid.');
@@ -37,7 +38,7 @@ export default function ContactForm() {
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
+                setErrorMessage(`${e.target.id} is required.`);
             } else {
                 setErrorMessage('');
             }
@@ -59,13 +60,13 @@ export default function ContactForm() {
         <>
             <h1>Contact Page</h1>
             <Grid container>
-                <form className={classes.root} noValidate autoComplete="off" id="contact-form">
-                    <Grid item xs={12} >
+                <form className={classes.root} noValidate autoComplete="off" id="contact-form" onSubmit={handleSubmit}>
+                    <Grid item xs={6} >
                         <TextField
                             required
                             id="name"
                             label="Name"
-                            defaultValue=""
+                            defaultValue=" "
                             placeholder="Enter your name here."
                             variant="outlined"
                             onChange={handleChange}
@@ -96,12 +97,11 @@ export default function ContactForm() {
                         />
                     </Grid>
                     {errorMessage && (
-                        <div>
-                            <h1>hi</h1>
-                            <p className="error-text">{errorMessage}</p>
-                        </div>
+
+                        <p className="error-text">{errorMessage}</p>
+
                     )}
-                    <Button className="classes.buttonField" variant="contained" color="primary" onClick={handleSubmit}>
+                    <Button className="classes.buttonField" variant="contained" color="primary" type="submit">
                         Submit
                     </Button>
                 </form>
