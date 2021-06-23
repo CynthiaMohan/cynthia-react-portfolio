@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cynthia-react-portfolio/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/cynthia-react-portfolio/static/js/main.330791ac.chunk.js",
-    "main.js.map": "/cynthia-react-portfolio/static/js/main.330791ac.chunk.js.map",
+    "main.js": "/cynthia-react-portfolio/static/js/main.5efb1e91.chunk.js",
+    "main.js.map": "/cynthia-react-portfolio/static/js/main.5efb1e91.chunk.js.map",
     "runtime-main.js": "/cynthia-react-portfolio/static/js/runtime-main.391aa840.js",
     "runtime-main.js.map": "/cynthia-react-portfolio/static/js/runtime-main.391aa840.js.map",
     "static/js/2.ab266197.chunk.js": "/cynthia-react-portfolio/static/js/2.ab266197.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.391aa840.js",
     "static/js/2.ab266197.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.330791ac.chunk.js"
+    "static/js/main.5efb1e91.chunk.js"
   ]
 }
