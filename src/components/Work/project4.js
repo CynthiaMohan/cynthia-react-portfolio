@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import projectImg from '../../assets/images/photo1.jpg';
+import projectImg from '../../assets/images/19.png';
 
 const useStyles = makeStyles({
     root: {
@@ -30,10 +30,10 @@ export default function ImgMediaCard() {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Placeholder
+                        Budget Tracker
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        A budget tracker application to allow for offline access and functionality. When the user enters transactions offline, the total should be updated when they're brought back online.
                     </Typography>
                 </CardContent>
             </CardActionArea>

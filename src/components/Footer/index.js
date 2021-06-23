@@ -12,7 +12,7 @@ const useStyles = makeStyles({
     root: {
         width: '100%',
         position: 'fixed',
-        bottom: 50,
+        bottom: 15,
         backgroundColor: "#484B4C",
         color: "#FFFFFF",
         left: 0,
@@ -20,12 +20,14 @@ const useStyles = makeStyles({
     },
     root2: {
         width: '100%',
+        height: "25px",
         position: 'fixed',
         bottom: 0,
         backgroundColor: "#484B4C",
         color: "#FFFFFF",
         left: 0,
-        justifyContent: "center"
+        justifyContent: "center",
+        fontSize: 12,
     },
     label: {
         color: "#FFFFFF"

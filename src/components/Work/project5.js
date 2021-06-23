@@ -7,7 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import projectImg from '../../assets/images/photo1.jpg';
+import projectImg from '../../assets/images/4.jpg';
 
 const useStyles = makeStyles({
     root: {
@@ -23,28 +23,28 @@ export default function ImgMediaCard() {
             <CardActionArea>
                 <CardMedia
                     component="img"
-                    alt="Interactive Front-end Project "
+                    alt="Java-Script-Coding Quiz "
                     height="140"
                     image={projectImg}
-                    title="Budget-Tracker"
+                    title="Java-Script-Coding Quiz"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        Placeholder
+                        JavaScript Coding Quiz
                     </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                        To generate a quiz on the concepts of java script.
                     </Typography>
                 </CardContent>
             </CardActionArea>
             <CardActions>
                 <Button size="small" color="primary" >
-                    <a href="https://github.com/CynthiaMohan/Budget-tracker">
+                    <a href="https://github.com/CynthiaMohan/Java-Script-Coding-Quiz">
                         Github
                     </a>
                 </Button>
                 <Button size="small" color="primary">
-                    <a href="https://evening-taiga-49403.herokuapp.com/">
+                    <a href="https://cynthiamohan.github.io/Java-Script-Coding-Quiz/">
                         Deployed App
                     </a>
                 </Button>
