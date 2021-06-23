@@ -6,8 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <Router basename={process.env.PUBLIC_URL}>
-    <Link to="https://cynthiamohan.github.io/cynthia-react-portfolio/" />
+  <Router>
     <App />
   </Router>,
   document.getElementById('root')
